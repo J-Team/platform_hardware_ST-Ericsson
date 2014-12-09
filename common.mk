@@ -1,3 +1,4 @@
+ifneq ($(filter montblanc,$(TARGET_BOARD_PLATFORM)),)
 LOCAL_PATH := $(call my-dir)
 
 # Audio
@@ -30,4 +31,4 @@ PRODUCT_PACKAGES += \
    libhealthd \
    memtrack.montblanc
 
-
+endif
